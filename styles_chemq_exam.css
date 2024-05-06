@@ -1,0 +1,154 @@
+
+
+.examing_picture_DIV{
+    background-color: white;
+    opacity: 0.9;
+    padding: 2%;
+
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    width: clamp(250px, 35vw, 500px);
+    
+
+}
+
+.examing_picture{
+    width: 56%;
+    max-width: 400px;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    gap: 40px;
+    flex-wrap: nowrap;
+    
+}
+
+
+
+.responses{
+    display: flex;
+
+
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-bottom: 10px;
+    
+
+
+
+}
+
+.responses-1{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 27px;
+
+    
+
+}
+.responses-2{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 27px;   
+
+}
+
+.response{
+    margin-left: 2%;
+    margin-right: 2%;
+
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    
+    background-color: white;
+    text-align: center;
+    opacity: 0.9;
+    flex-basis: max(38%);
+
+    
+    font-family: 'Poppins';
+    font-size: clamp(15px, 4.7vw, 27px);
+
+    border-radius: 20px;
+
+    width: 350px !important;
+    border-style: solid;
+    border-width: 5px;
+    border-color: black;
+}
+
+.points{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    justify-content: right;
+    margin-left: 20px;
+    margin-right: 5px;
+    grid-column: 3/3;
+    padding-right:10%;
+    gap: 3vw;
+
+
+
+
+}
+
+.points_right{
+    display: flex;
+    align-items: center;
+    gap: 1.2vw;
+    justify-content: right;
+   
+}
+
+.points_wrong{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    gap:1.2vw;
+}
+
+.points_bar{
+    font-family: 'Poppins';
+    font-weight: bold;
+    font-size: clamp(14px, 2.4vw, 33px);
+    
+    
+
+}
+
+.patka {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+
+        
+}
+
+.next{
+    background-color: rgb(253, 211, 0);
+    position: fixed;
+    bottom: 0%;
+    width: 100%;
+    padding: 20px;
+    z-index: 1;
+    text-align: center;
+
+    display: none;
+
+}

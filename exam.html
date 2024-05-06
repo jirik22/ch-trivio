@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="cz">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8FJGYT4GKT"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-8FJGYT4GKT');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CH-TRIVIO</title>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+
+    <link rel="shortcut icon" type="image/x-icon" href="ch-trivio-logo-notext.png" />
+    <link rel="stylesheet" href="styles_chemq.css">
+    <link rel="stylesheet" href="styles_chemq_exam.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="exam.js"></script>
+</head>
+<body onload="loadResponses()">
+    
+        
+    <div class="heading">
+       
+        <div class="home">
+             <a href="index.html" class="fa fa-soc fa-home" style="font-size: clamp(20px, 6vw, 40px) !important;"></a>
+        </div>
+        <div class = "header">
+            <h1 style="font-size: clamp(20px, 5vw, 30px) !important;">CH-TRIVIO</h1>
+        </div>
+        <div class="points">
+            <div class="points_right">
+                <span class="fa fa-soc fa-check" style="font-size: clamp(20px, 4vw, 28px) !important; margin:0 !important;"></span>
+                <span id = "right_points_bar" class="points_bar"> 0</span>
+
+            </div>
+
+            <div class="points_wrong">
+                <span  class="fa fa-soc fa-times" style="font-size: clamp(20px, 4vw, 28px) !important; margin:0 !important;"></span>
+                <span id = "wrong_points_bar" class="points_bar"> 0</span>
+            </div>
+        </div>
+
+    </div>
+
+    <div class = "exam">
+        <div class="content">
+            <div class = "next" id="next" onclick="next()">
+                <span  class="fa fa-soc fa-arrow-right" style="font-size: clamp(20px, 4vw, 28px) !important; margin:0 !important;"></span>
+            </div>
+            <div class="examing_picture_DIV">
+
+                <img id = "examing_picture" class="examing_picture" alt="">
+                    
+            </div>
+            <div class="responses">
+                    <div id = "1_res_div" onclick="res1(), color()" class = "response"><span id = "1_res"></span></div>
+                    <div id = "2_res_div" onclick="res2(), color()" class = "response"><span id = "2_res"></span></div>
+                    <div id = "3_res_div" onclick="res3(), color()" class = "response"><span id = "3_res"></span></div>
+                    <div id = "4_res_div" onclick="res4(), color()" class = "response"><span id = "4_res"></span></div>
+                   
+
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

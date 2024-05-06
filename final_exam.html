@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="cz">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8FJGYT4GKT"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-8FJGYT4GKT');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CH-TRIVIO</title>
+    <link rel="shortcut icon" type="image/x-icon" href="ch-trivio-logo-notext.png" />
+    <link rel="stylesheet" href="styles_chemq.css">
+    <link rel="stylesheet" href="final_exam.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <script src="final_exam.js"></script>
+    
+</head>
+<body onload="loadPoints()">
+
+
+    <div class="heading">
+       
+       <div class="home">
+            <a href="index.html" class="fa fa-soc fa-home" style="font-size: clamp(20px, 6vw, 40px) !important;"></a>
+       </div>
+       <div class = "header">
+           <h1 style="font-size: clamp(20px, 5vw, 30px) !important;">CH-TRIVIO</h1>
+       </div>
+
+    </div>
+    
+    <div class="content">
+        <div class="final_statement">
+            <div class = "congrats_text">
+                <span id = "congrats">Congratulations</span>
+            </div>
+            
+            <div class="points">
+                <div class="points_right">
+                    <span class="fa-final fa fa-soc fa-check"></span>
+                    
+                    <div class = "points_bar">
+                        <span id = "right_points_bar" class="points_text"> 99</span>
+                    </div>
+                    
+
+                </div>
+
+                <div class="points_wrong">
+                    <span  class="fa-final fa fa-soc fa-times"></span>
+                    <div class = "points_bar">
+                        <span id = "wrong_points_bar" class="points_text">99</span>
+                    </div>
+                </div>
+
+                
+        
+        
+           </div>
+           
+           <div id = "pracice_again" class="practice_again" onclick = "practiceOver()">
+                PROCVIČUJ DÁLE NEZNÁMÉ KARTIČKY
+
+           </div>
+       </div>
+
+</body>
+</html>

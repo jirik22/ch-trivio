@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html id = "all" lang="cz">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8FJGYT4GKT"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-8FJGYT4GKT');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CH-TRIVIO</title>
+    <meta lang = "cz" name="description" content="Nauč se triviální názvy chemických sloučenin online! Procvičuj triviální názvy aminokyselin, karboxylových kyselin, sacharidů a dalších sloučenin.">
+
+    <meta lang = "en" name="description" content="Learn the trivial names of chemical compounds online! Practice trivial names of amino acids, carboxylic acids, carbohydrates and other compounds.">
+
+    <meta name="keywords" content="triviální názvy chemie test, triviální názvy chemie, Názvosloví procvičování, learn chemistry trivial nomenclature, trivial names flashcards ">
+    <meta name="author" content="Jiri Kubicek">
+
+
+    <link rel="shortcut icon" type="image/x-icon" href="ch-trivio-logo-notext.png" />
+    <link rel="stylesheet" href="styles_chemq.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>
+<body onload="anullPoints()">
+    <script src="main.js"></script>
+    
+    <div class="heading">
+        <div class="home">
+            <a href="index.html" class="fa fa-soc fa-home" style="font-size: clamp(20px, 6vw, 40px) !important;"></a>
+        </div>
+        <div class = "header">
+            <h1 style="font-size: clamp(20px, 5vw, 30px) !important;">CH-TRIVIO</h1>
+        </div>
+
+        
+       <div class = "language_select">
+            <div id = "en" onclick = "english()" >
+                <h1 style="font-size: clamp(14px, 2vw, 20px) !important;">EN</h1>
+            </div>
+            <div id="cz" onclick = "czech()" >
+                <h1  style="font-size: clamp(14px, 2vw, 20px) !important;">CZ</h1>
+            </div>
+        </div>
+        
+
+    </div>
+
+    <div >
+        <h1 class = "info_box" id="select_cards">VYBER KARTIČKY A PROCVIČUJ TRIVIÁLNÍ NÁZVY</h1>
+    </div>
+    <div class="compound_selection">
+        <div  class="box_info" onclick = "selectAminoacids()">
+            <div class = "number_of_cards">
+                <span id = "1-num_cards"> </span>
+            </div>
+            <div class = zapis_img>
+                <img src="1_aminoacids/Aminoacids.jpg" alt="" class="zapissvg">
+            </div>
+            <div class = zapis_txt>
+                <h1 id = "1-box"></h1>
+            </div>
+        </div>
+        
+        <div class="box_info" onclick = "selectCarboxylicacids()">
+            <div class = "number_of_cards">
+                <span id = "2-num_cards"> </span>
+            </div>
+            <div class = zapis_img>
+                <img src="2_carboxylic_acids/Carboxylic acid.png" alt="" class="zapissvg">
+            </div>
+            <div class = zapis_txt>
+                <h1 id = "2-box"></h1>
+            </div>
+        </div>
+        
+        <div class="box_info" onclick="selectDicarboxylicacids()">
+            <div class = "number_of_cards">
+                <span id = "3-num_cards"> </span>
+            </div>
+            <div class = zapis_img>
+                <img src="3_dicarboxylic_acids/Maleic acid.png" alt="" class="zapissvg">
+            </div>
+            <div class = zapis_txt>
+                <h1 id = "3-box"></h1>
+            </div>
+        </div>
+
+        <div class="box_info" onclick="selectHeterocycles()">
+            <div class = "number_of_cards">
+                <span id = "4-num_cards"> </span>
+            </div>
+            <div class = zapis_img>
+                <img src="4_heterocycles/Furan.png" alt="" class="zapissvg">
+            </div>
+            <div class = zapis_txt>
+                <h1  id = "4-box"></h1>
+            </div>
+        </div>
+
+        <div  class="box_info" onclick = "selectAromaticDerivates()">
+            <div class = "number_of_cards">
+                <span id = "5-num_cards"> </span>
+            </div>
+            <div class = zapis_img>
+                <img src="5_aromatic_derivates/Benzene.png" alt="" class="zapissvg">
+            </div>
+            <div class = zapis_txt>
+                <h1 id = "5-box"></h1>
+            </div>
+        </div>
+
+        <div  class="box_info" onclick = "selectSacharides()">
+            <div class = "number_of_cards">
+                <span id = "6-num_cards"> </span>
+            </div>
+            <div class = zapis_img>
+                <img src="6_sacharides/α-D-Glucose.png" alt="" class="zapissvg">
+            </div>
+            <div class = zapis_txt>
+                <h1 id = "6-box"></h1>
+            </div>
+        </div>
+
+        <div  class="box_info" onclick = "selectOxoHydroxoAcids()">
+            <div class = "number_of_cards">
+                <span id = "7-num_cards"> </span>
+            </div>
+            <div class = zapis_img>
+                <img src="7_oxo_hydroxo_acids/Pyruvic acid.png" alt="" class="zapissvg">
+            </div>
+            <div class = zapis_txt>
+                <h1 id = "7-box"></h1>
+            </div>
+        </div>
+
+        <div  class="box_info" onclick = "selectPlastics()">
+            <div class = "number_of_cards">
+                <span id = "8-num_cards"> </span>
+            </div>
+            <div class = zapis_img>
+                <img src="8_plastics/Polyvinyl chloride.png" alt="" class="zapissvg">
+            </div>
+            <div class = zapis_txt>
+                <h1 id = "8-box"></h1>
+            </div>
+        </div>
+
+        <div  class="box_info" onclick = "selectCarbonylAlcohols()">
+            <div class = "number_of_cards">
+                <span id = "9-num_cards"> </span>
+            </div>
+            <div class = zapis_img>
+                <img src="9_carbonyl_alcohols/Acetone.png" alt="" class="zapissvg">
+            </div>
+            <div class = zapis_txt>
+                <h1 id = "9-box"> </h1>
+            </div>
+        </div>
+    </div>
+
+    <div class = "patka">
+        
+        <h2 class = "patka_statement">Made with ❤ by <a href="https://www.instagram.com/kubckjiri/">Jiří Kubíček</a></h2>
+        
+        
+
+    </div>
+</body>
+</html>

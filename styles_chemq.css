@@ -1,0 +1,154 @@
+
+html{
+
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+body{
+    background-color: black;
+    margin: 0px;
+}
+
+.home{
+    display: flex;
+    align-items: center;
+    grid-column: 1/1;
+    padding-left:10%;
+}
+
+.header{
+    display: flex;
+    grid-column: 2/2;
+    align-items: center;
+    justify-content: center;
+    font-size: clamp(20px, 5vw, 30px) !important;
+}
+
+
+.compound_selection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 100px;
+    margin-left: 5%;
+    margin-right: 5%;
+
+}
+
+
+.zapissvg{
+    height: 142px;
+    margin: 5%;
+}
+
+h1{
+    color: black;
+    font-family: 'Poppins';
+    font-size: clamp(17px, 4vw, 24px);
+    text-align: center;
+
+}
+
+h2{
+    color: black;
+    font-family: 'Poppins';
+    font-size: clamp(12px, 4vw, 23px);
+    text-align: center;
+}
+
+
+.patka {
+
+    background-color: rgb(253, 211, 0);
+    text-align: center;
+    margin-top: 40px;
+    padding: 1px;
+}
+
+.patka_statement{
+    font-size: clamp(12px, 4vw, 20px);
+    
+    
+}
+
+a:hover {
+    opacity: 0.7;
+  }
+
+.info_box{
+    color: white;
+    margin-bottom: 35px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.box_info{
+    position: relative;
+
+    background-color: white;
+    text-align: center;
+    opacity: 0.9;
+    padding: 6px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    
+
+}
+
+.fa{
+    margin: 20px;
+    color: black;
+    text-align: center;
+    font-weight: bold !important;
+    font-size: 30px !important;
+
+}
+
+.heading{
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    background-color: rgb(253, 211, 0);
+    margin-bottom: 40px;
+    
+
+}
+
+.number_of_cards{
+    position: absolute;
+    background-color: black;
+
+    color: white;
+    font-size: clamp(12px, 1.5vw, 14px);
+    font-family: 'Poppins';
+    font-weight: bold;
+
+
+    padding: 8px;
+    border-radius: 18px;
+    top: 9px;
+    right: 9px;
+
+
+
+}
+
+.language_select{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    justify-content: right;
+    margin-left: 20px;
+    margin-right: 5px;
+    grid-column: 3/3;
+    padding-right:10%;
+    gap: 20px;
+}

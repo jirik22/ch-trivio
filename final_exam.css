@@ -1,0 +1,80 @@
+.fa-final{
+font-size: clamp(17px, 20vw, 100px) !important;
+color: rgb(253, 211, 0);
+margin: 0;
+
+}
+
+
+.points{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20%;
+
+}
+.points_right{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 15%;
+}
+
+.points_wrong{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 15%;
+}
+
+
+
+.points_text{
+    color: white;
+    font-family: 'Poppins';
+    font-size: clamp(17px, 10vw, 70px);
+    text-align: center;
+
+}
+
+
+.congrats_text{
+    color: white;
+    font-family: 'Poppins';
+    font-size: clamp(17px, 7vw, 64px);
+    text-align: center;
+    margin-bottom: 2%;
+    margin-left: 10%;
+    margin-right: 10%;
+
+}
+
+.patka {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+
+        
+}
+
+.practice_again{
+    background-color: rgb(253, 211, 0);
+    font-family: 'Poppins';
+    font-size: clamp(17px, 4vw, 30px);
+    text-align: center;
+    margin-bottom: 50px ;
+    margin-top: 58px;
+    margin-left: 17%;
+    
+    margin-right: 17%;
+    border-radius: 20px;
+    padding: 10px;
+
+   
+    display: none;
+
+
+}
